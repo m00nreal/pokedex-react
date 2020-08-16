@@ -11,7 +11,7 @@ import HomeScreen from "../components/screens/HomeScreen";
 
 const AppRouter = () => {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename={/pokedex-react/}>
             <div>
                 <PokeNavbar/>
                 <Switch>
