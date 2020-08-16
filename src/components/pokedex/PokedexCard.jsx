@@ -16,7 +16,7 @@ const PokeCard = ({
 
     const getImage = () => {
 
-        return image !== '' ? image : `/pokedex-react/assets/images/noimg.png`
+        return image !== '' ? image : `${process.env.PUBLIC_URL}/assets/images/noimg.png`
     }
     return (
         loading ? <Spinner color="primary"/> :
