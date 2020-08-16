@@ -68,8 +68,8 @@ const HomeScreen = () => {
                     pageRangeDisplayed={2}
                     onPageChange={handlePageClick}
                     containerClassName="pagination"
-                    subContainerClassName={'dark'}
-                    activeClassName="active"
+                    subContainerClassName="dark"
+                    activeClassName="active-page"
                 />
             </div>
         </div>

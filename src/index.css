@@ -104,6 +104,11 @@ code {
   outline: none;
 }
 
+.active-page {
+  background: #003A70;
+  color: #FFCB05;
+}
+
 /* Abilities card */
 
 .abilities {
