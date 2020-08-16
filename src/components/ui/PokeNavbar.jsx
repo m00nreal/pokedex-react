@@ -30,7 +30,7 @@ const PokeNavbar = () => {
                         to="/buscar"
                         className="nav-item nav-link"
                     >
-                        Buscar
+                        Search
                     </NavLink>
                 </Nav>
                 <BLink

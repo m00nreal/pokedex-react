@@ -60,6 +60,11 @@ code {
 .card {
   max-width: 350px;
   height: 100%;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img{

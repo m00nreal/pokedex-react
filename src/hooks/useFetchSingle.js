@@ -19,7 +19,7 @@ export const useFetchSingle = (url ) => {
         setState({ data: null, loading: true, error: null });
 
         fetch( url )
-            .then( resp => resp.json() )
+            .then( resp => resp.json())
             .then( data => {
                 const abilities = getPokemonAbilities(data);
                 const types = getPokemonTypes(data);

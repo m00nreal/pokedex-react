@@ -24,6 +24,10 @@ const HomeScreen = () => {
     // Get pokemons
     const { data, loading } = useFetch(`https://pokeapi.co/api/v2/pokemon?offset=${state.offset}&limit=${state.perPage}`);
 
+    const orderedData = !loading && data.sort((a, b) => {
+        return a.id - b.id;
+    })
+
     // Pagination
     const handlePageClick = ( newPage ) => {
         const newOffset = state.perPage * newPage.selected;
@@ -36,9 +40,9 @@ const HomeScreen = () => {
 
     return (
         <div className="container">
-            <h1 className="title text-center text-primary mt-4">Todos los PoKéMoN</h1>
+            <h1 className="title text-center text-primary mt-4">All PoKeMoN</h1>
             <hr/>
-            <PokedexList data={data} loading={loading}/>
+            <PokedexList data={orderedData} loading={loading}/>
             <div className="d-none d-md-flex justify-content-center">
                 <ReactPaginate
                     previousLabel="<"

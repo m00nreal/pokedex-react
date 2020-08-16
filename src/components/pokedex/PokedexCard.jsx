@@ -18,8 +18,8 @@ const PokeCard = ({
     }
     return (
         loading ? <span>cargando</span> :
-        <Card className="m-auto">
-            <CardHeader className="text-center font-weight-bolder">{ capitalize(name) } <span className="card-header__id small"># { id }</span></CardHeader>
+        <Card className="m-auto animate__animated animate__fadeIn">
+            <CardHeader className="text-center font-weight-bolder">{ capitalize(name) } <span className="card-header__id small d-block  "># { id }</span></CardHeader>
             <CardBody className="d-flex flex-column">
                 { loading ? <Spinner color="primary"/> : <CardImg className="align-self-center" width="50%" src={getImage()} alt={name}/>}
                 <div>
