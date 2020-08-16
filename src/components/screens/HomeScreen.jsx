@@ -53,8 +53,10 @@ const HomeScreen = () => {
                     pageRangeDisplayed={9}
                     onPageChange={handlePageClick}
                     containerClassName="pagination"
-                    subContainerClassName={'dark'}
-                    activeClassName="active"
+                    pageClassName={'pagination-list-item'}
+                    pageLinkClassName={'link'}
+                    activeClassName={'active-link'}
+                    activeLinkClassName={'active-link'}
                 />
             </div>
             {/*hidden on larger screens. on smaller devices it has a lower pagination range*/}

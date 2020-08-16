@@ -20,7 +20,7 @@ const PokeNavbar = () => {
     return (
         <Navbar color="danger" sticky="true" expand="md">
             <Link className="navbar-brand d-flex" to="/">
-                <img className="brand" src={`/pokedex-react/assets/images/pkdx.png`} alt="Pokedex"/>
+                <img className="brand flex-shrink-0" src={`/pokedex-react/assets/images/pkdx.png`} alt="Pokedex"/>
             </Link>
             <NavbarToggler onClick={toggle} className="navbar-dark"/>
             <Collapse isOpen={isOpen} navbar>
