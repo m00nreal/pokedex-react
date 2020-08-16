@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <PokeNavbar/> should match snapshot 1`] = `
+<Navbar
+  color="danger"
+  expand="md"
+  sticky="true"
+  tag="nav"
+>
+  <Link
+    className="navbar-brand d-flex"
+    to="/"
+  >
+    <img
+      alt="Pokedex"
+      className="brand flex-shrink-0"
+      src="/pokedex-react/assets/images/pkdx.png"
+    />
+  </Link>
+  <NavbarToggler
+    className="navbar-dark"
+    onClick={[Function]}
+    tag="button"
+    type="button"
+  />
+  <Collapse
+    appear={false}
+    enter={true}
+    exit={true}
+    in={false}
+    isOpen={false}
+    mountOnEnter={false}
+    navbar={true}
+    onEnter={[Function]}
+    onEntered={[Function]}
+    onEntering={[Function]}
+    onExit={[Function]}
+    onExited={[Function]}
+    onExiting={[Function]}
+    tag="div"
+    timeout={350}
+    unmountOnExit={false}
+  >
+    <Nav
+      className="mr-auto"
+      navbar={true}
+      tag="ul"
+      vertical={false}
+    >
+      <NavLink
+        activeClassName="active"
+        className="nav-item nav-link"
+        to="/buscar"
+      >
+        Search
+      </NavLink>
+    </Nav>
+    <NavLink
+      className="nav-item nav-link"
+      href="https://github.com/m00nreal/pokedex-react"
+      tag="a"
+      target="_blank"
+    >
+      <img
+        alt="Github"
+        className="d-none d-md-block"
+        src="/pokedex-react/assets/images/github.png"
+      />
+      <span
+        className="d-md-none"
+      >
+        GitHub
+      </span>
+    </NavLink>
+  </Collapse>
+</Navbar>
+`;

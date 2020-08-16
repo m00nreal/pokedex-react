@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <HomeScreen/> should match snapshot 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="title text-center text-primary mt-4"
+  >
+    All PoKeMoN
+  </h1>
+  <hr />
+  <PokedexList
+    data={false}
+    loading={true}
+  />
+  <div
+    className="d-none d-md-flex justify-content-center paginate"
+  >
+    <PaginationBoxView
+      activeClassName="active-link"
+      activeLinkClassName="active-link"
+      breakLabel="..."
+      containerClassName="pagination"
+      disableInitialCallback={false}
+      disabledClassName="disabled"
+      marginPagesDisplayed={7}
+      nextClassName="next"
+      nextLabel=">"
+      onPageChange={[Function]}
+      pageClassName="pagination-list-item"
+      pageCount={41}
+      pageLinkClassName="link"
+      pageRangeDisplayed={7}
+      previousClassName="previous"
+      previousLabel="<"
+    />
+  </div>
+  <div
+    className="d-md-none d-block paginate"
+  >
+    <PaginationBoxView
+      activeClassName="active-link"
+      activeLinkClassName="active-link"
+      breakLabel="..."
+      disableInitialCallback={false}
+      disabledClassName="disabled"
+      marginPagesDisplayed={3}
+      nextClassName="next"
+      nextLabel=">"
+      onPageChange={[Function]}
+      ontainerClassName="pagination"
+      pageClassName="pagination-list-item"
+      pageCount={41}
+      pageLinkClassName="link"
+      pageRangeDisplayed={2}
+      previousClassName="previous"
+      previousLabel="<"
+    />
+  </div>
+</div>
+`;

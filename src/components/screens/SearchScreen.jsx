@@ -15,7 +15,6 @@ const SearchScreen = () => {
     // Get all pokemon names and api link at the begin of execution
     useEffect(() => {
         if(!localStorage.getItem('pokenames')){
-            console.log('me ejecute')
             fetch(`https://pokeapi.co/api/v2/pokemon?limit=1000`)
                 .then(resp => resp.json())
                 .then(pokes => {

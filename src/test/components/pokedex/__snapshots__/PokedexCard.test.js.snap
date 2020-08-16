@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <PokedexCard/> should match snapshot 1`] = `
+<Card
+  className="m-auto animate__animated animate__fadeIn"
+  tag="div"
+>
+  <CardHeader
+    className="text-center font-weight-bolder"
+    tag="div"
+  >
+    Bulbasaur
+     
+    <span
+      className="card-header__id small d-block  "
+    >
+      # 
+      1
+    </span>
+  </CardHeader>
+  <CardBody
+    className="d-flex flex-column"
+    tag="div"
+  >
+    <CardImg
+      alt="bulbasaur"
+      className="align-self-center"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+      tag="img"
+      width="50%"
+    />
+    <div>
+      <li
+        className="list-item"
+      >
+        Height: 
+        <span>
+          7
+           m
+        </span>
+      </li>
+      <li
+        className="list-item"
+      >
+        Weight: 
+        6.9
+         kg
+      </li>
+      <div
+        className="abilities"
+      >
+        <div
+          className="abilities-header"
+        >
+          Abilities
+        </div>
+        <div
+          className="abilities-content"
+        >
+          overgrow, chlorophyll
+        </div>
+      </div>
+      <li
+        className="list-item"
+      >
+        <Badge
+          className="mr-1 p-1"
+          color="secondary"
+          key="grass"
+          pill={false}
+          style={
+            Object {
+              "background": "#95de64",
+            }
+          }
+          tag="span"
+        >
+          grass
+        </Badge>
+        <Badge
+          className="mr-1 p-1"
+          color="secondary"
+          key="poison"
+          pill={false}
+          style={
+            Object {
+              "background": "#3f6600",
+            }
+          }
+          tag="span"
+        >
+          poison
+        </Badge>
+      </li>
+    </div>
+  </CardBody>
+</Card>
+`;

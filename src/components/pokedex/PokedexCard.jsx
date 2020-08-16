@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Card, CardBody, CardImg, CardHeader, Badge, Spinner} from "reactstrap";
 import {capitalize, getTypeColor} from "../../helpers/utils";
 
@@ -14,10 +15,11 @@ const PokeCard = ({
     }) => {
 
     const getImage = () => {
-        return image ? image : `${process.env.PUBLIC_URL}/assets/images/noimg.png`
+
+        return image !== '' ? image : `/pokedex-react/assets/images/noimg.png`
     }
     return (
-        loading ? <span>cargando</span> :
+        loading ? <Spinner color="primary"/> :
         <Card className="m-auto animate__animated animate__fadeIn">
             <CardHeader className="text-center font-weight-bolder">{ capitalize(name) } <span className="card-header__id small d-block  "># { id }</span></CardHeader>
             <CardBody className="d-flex flex-column">
@@ -48,5 +50,16 @@ const PokeCard = ({
         </Card>
     );
 };
+
+PokeCard.propTypes = {
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    abilities: PropTypes.array.isRequired,
+    height: PropTypes.number.isRequired,
+    weight: PropTypes.number.isRequired,
+    types: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
+}
 
 export default PokeCard;

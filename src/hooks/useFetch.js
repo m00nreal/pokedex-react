@@ -30,7 +30,7 @@ export const useFetch = ( url ) => {
                             const types = getPokemonTypes(pokemon);
                             const newPokemon = {
                                     id: pokemon.id,
-                                    image: pokemon?.sprites?.front_default,
+                                    image: pokemon?.sprites?.front_default || '',
                                     name: pokemon.name,
                                     abilities: abilities,
                                     height: pokemon.height,

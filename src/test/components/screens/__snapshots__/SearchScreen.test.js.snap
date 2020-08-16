@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <SearchScreen/> should match snapshot 1`] = `
+<div
+  className="container mt-4"
+>
+  <div
+    className="row d-flex align-content-center justify-content-center align-items-center flex-column"
+  >
+    <div
+      className="col-6 d-flex flex-column"
+    >
+      <h1
+        className="title text-primary text-center"
+      >
+        Search by name
+      </h1>
+      <hr />
+      <form
+        className="align-self-center"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          id="pokemon"
+          name="pokemon"
+          onChange={[Function]}
+          placeholder="Totodile..."
+          type="text"
+          value=""
+        />
+      </form>
+    </div>
+    <div
+      className="m-4 d-flex justify-content-center align-items-center"
+    />
+  </div>
+</div>
+`;

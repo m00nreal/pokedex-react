@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PokeCard from "./PokedexCard";
 import {Spinner} from "reactstrap";
 
@@ -30,5 +31,10 @@ const PokedexList = ({ data, loading }) => {
         </>
     );
 };
+
+PokedexList.propTypes = {
+    data: PropTypes.any.isRequired,
+    loading: PropTypes.bool.isRequired
+}
 
 export default PokedexList;
