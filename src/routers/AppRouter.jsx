@@ -11,7 +11,7 @@ import HomeScreen from "../components/screens/HomeScreen";
 
 const AppRouter = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div>
                 <PokeNavbar/>
                 <Switch>

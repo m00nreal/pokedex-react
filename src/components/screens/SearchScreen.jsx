@@ -48,7 +48,7 @@ const SearchScreen = () => {
             } else {
                 setState(prev => ({
                     ...prev,
-                    pokemon: ''
+                    pokemon: sanitize
                 }))
             }
         }
@@ -67,7 +67,7 @@ const SearchScreen = () => {
                             id="pokemon"
                             name="pokemon"
                             onChange={handleInputChange}
-                            placeholder="pokemon..."
+                            placeholder="Totodile..."
                             type="text"
                             value={pokemon}
                         />
@@ -78,10 +78,10 @@ const SearchScreen = () => {
                         state.pokemon === '' && !loading && <Alert className="mx-4">Type a name to search a pokemon</Alert>
                     }
                     {
-                        loading && !data && <Spinner className="m-auto" color="primary"/>
+                        state.pokemonsNames.includes(validateName(state.pokemon)) && loading && !data && <Spinner className="m-auto" color="primary"/>
                     }
                     {
-                        !state.pokemonsNames.includes(validateName(state.pokemon)) && state.pokemon !== '' && <Alert color="danger">Pokemon { state.pokemon } does not exists</Alert>
+                        !state.pokemonsNames.includes(validateName(state.pokemon)) && state.pokemon !== '' && !data && <Alert color="danger">Pokemon { state.pokemon } does not exists</Alert>
                     }
                     {
                         state.pokemon !== '' && data && <PokeCard className="mb-4" {...data} loading={loading}/>
